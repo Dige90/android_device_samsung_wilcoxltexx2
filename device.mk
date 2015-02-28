@@ -13,12 +13,12 @@
 # limitations under the License.
 #
 
-# Inherit from serrano-common
-$(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
-$(call inherit-product, device/samsung/serrano-common/nfc.mk)
+# Inherit from wilcox-common
+$(call inherit-product, device/samsung/wilcox-common/wilcox-common.mk)
+$(call inherit-product, device/samsung/wilcox-common/nfc.mk)
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serranoltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/wilcoxltexx/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
