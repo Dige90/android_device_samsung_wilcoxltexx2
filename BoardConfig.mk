@@ -21,7 +21,7 @@
 #
 
 # inherit from common msm8930
--include device/samsung/msm8930-common/BoardConfigCommon.mk
+-include device/samsung/wilcox-common/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/wilcoxltexx/include
 
