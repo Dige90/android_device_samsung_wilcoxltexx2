@@ -23,7 +23,7 @@
 # inherit from common msm8930
 -include device/samsung/wilcox-common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/wilcoxltexx/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/wilcox-common/include
 
 # Kernel
 BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom user_debug=23 androidboot.bootdevice=msm_sdcc.1
@@ -41,7 +41,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_OTA_ASSERT_DEVICE := wilcoxlte,wilcoxltexx,SM-G3815
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/wilcoxltexx/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/wilcox-common/rootdir/fstab.qcom
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 # Partition sizes
@@ -53,10 +53,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5616139264
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/wilcoxltexx/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/wilcox-common/bluetooth
 
 # Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/wilcoxltexx/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/wilcox-common/ril/
 
 # NFC
 BOARD_HAVE_NFC := true
