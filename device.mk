@@ -18,7 +18,7 @@ $(call inherit-product, device/samsung/wilcox-common/wilcox-common.mk)
 $(call inherit-product, device/samsung/wilcox-common/nfc.mk)
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/wilcoxltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/wilcox-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
